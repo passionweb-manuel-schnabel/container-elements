@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/Passionweb/ContainerElements/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="ContainerDefault" />
+
+<f:section name="Main">
+
+    <f:asset.css identifier="containerCss" href="EXT:container_elements/Resources/Public/Css/container.css"/>
+
+    <div class="contentcontainer" data-container-identifier="{data.CType}">
+        <f:render partial="Container/Rendering/{data.CType -> ce:upperCamelCase()}" arguments="{_all}" />
+    </div>
+
+</f:section>
+</html>

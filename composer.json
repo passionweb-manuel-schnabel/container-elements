@@ -1,0 +1,22 @@
+{
+    "name": "passionweb/container-elements",
+    "type": "typo3-cms-extension",
+    "description": "Adds different grid container elements for EXT:container",
+    "license": ["GPL-2.0-or-later"],
+    "version": "1.0.0",
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^10.4 | ^11.5 | ^12.4",
+        "b13/container": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Passionweb\\ContainerElements\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "container_elements"
+        }
+    }
+}
